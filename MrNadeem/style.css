@@ -102,10 +102,10 @@ button:hover {
     background-repeat: no-repeat;
     
     /* ZOOM LEVEL: Increase this percentage to zoom in more, decrease to zoom out */
-    background-size: 450%; 
+    background-size: 500%; 
     
     /* CAMERA PAN: The first number is Left/Right, the second is Up/Down */
-    background-position: 65% 45%; 
+    background-position: 100% 65%; 
     
     border: 4px solid #3498db;
     cursor: pointer;
