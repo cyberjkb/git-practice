@@ -16,23 +16,27 @@
     <main>
         <h1>Instant Quote Calculator</h1>
         
+        <!-- NEW: The Profile Picture Reveal Section -->
+        <div class="secret-reveal-container">
+            <p style="font-size: 0.9rem; color: #7f8c8d;">(Click the Admissions Director for a VIP secret)</p>
+            <img src="https://www.waes.ac.uk/wp-content/uploads/2025/03/IMG_4383-1024x683.jpg" alt="Admissions Director" class="nadeem-profile" onclick="revealPromo()">
+            <p id="secretPromoText">🤫 Secret VIP Code: NADEEM</p>
+        </div>
+
         <div class="calculator-card">
             <label for="quantity">Number of Lanyards needed:</label>
-            <input type="number" id="quantity" placeholder="e.g. 100" min="1">
+            <input type="number" id="quantity" placeholder="e.g. 1" min="1">
 
             <label for="promoCode">Promo Code (Optional):</label>
             <input type="text" id="promoCode" placeholder="Enter code here">
 
-            <!-- This button triggers the JavaScript function when clicked -->
             <button onclick="calculateTotal()">Calculate Price</button>
 
-            <!-- The JavaScript will inject the text into these empty headings -->
             <h3 id="discountMessage"></h3>
             <h2 id="finalTotal">Total: £0.00</h2>
         </div>
     </main>
 
-    <!-- Links to your JavaScript logic -->
     <script src="script.js"></script>
 </body>
 </html>
