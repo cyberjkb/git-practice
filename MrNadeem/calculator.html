@@ -19,7 +19,10 @@
         <!-- NEW: The Profile Picture Reveal Section -->
         <div class="secret-reveal-container">
             <p style="font-size: 0.9rem; color: #7f8c8d;">(Click the Admissions Director for a VIP secret)</p>
-            <img src="https://www.waes.ac.uk/wp-content/uploads/2025/03/IMG_4383-1024x683.jpg" alt="Admissions Director" class="nadeem-profile" onclick="revealPromo()">
+            
+            <!-- We replaced the img tag with a div -->
+            <div class="nadeem-profile" onclick="revealPromo()" title="Click to reveal"></div>
+            
             <p id="secretPromoText">🤫 Secret VIP Code: NADEEM</p>
         </div>
 

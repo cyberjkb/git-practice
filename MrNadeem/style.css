@@ -92,12 +92,21 @@ button:hover {
 }
 
 .nadeem-profile {
-    width: 120px;
-    height: 120px;
+    width: 150px; /* Made the circle slightly bigger for a better view */
+    height: 150px;
     border-radius: 50%;
-    object-fit: cover;
-    /* This crops the image to focus on the face on the far right */
-    object-position: 95% 20%; 
+    margin: 0 auto; /* Centers the circle */
+    
+    /* The Background Image Trick */
+    background-image: url('https://www.waes.ac.uk/wp-content/uploads/2025/03/IMG_4383-1024x683.jpg');
+    background-repeat: no-repeat;
+    
+    /* ZOOM LEVEL: Increase this percentage to zoom in more, decrease to zoom out */
+    background-size: 450%; 
+    
+    /* CAMERA PAN: The first number is Left/Right, the second is Up/Down */
+    background-position: 95% 25%; 
+    
     border: 4px solid #3498db;
     cursor: pointer;
     box-shadow: 0 4px 8px rgba(0,0,0,0.2);
